@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Assessment18.DataContext
 {
-    public class StudentDataContext : DbContext  // <-- Class declaration
+    public class StudentDataContext : DbContext  
     {
         public StudentDataContext()
         {
@@ -28,7 +28,7 @@ namespace Assessment18.DataContext
             {
                 optionsBuilder.UseMySql(
                     "server=localhost;database=task18database;user=root;password=mysqlusername@123;",
-                    new MySqlServerVersion(new Version(8, 0, 33)) // <-- required by Pomelo
+                    new MySqlServerVersion(new Version(8, 0, 33)) 
                 );
             }
         }
